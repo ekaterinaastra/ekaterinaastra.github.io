@@ -94,6 +94,11 @@ p{max-width:var(--measure)}
 
 .origin{margin-top:48px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 40px;align-items:end;padding:32px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 0% 0%,rgba(215,132,201,.16),transparent 60%),var(--bg-2)}
 @media (max-width:720px){.origin{grid-template-columns:1fr;padding:24px}}
+.clip{margin-top:24px;display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:24px 40px;align-items:center;padding:32px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(215,132,201,.14),transparent 60%),var(--bg-2)}
+.clip video{display:block;width:100%;aspect-ratio:9/16;height:auto;border-radius:12px;background:#000;object-fit:cover}
+.clip h3{font-family:var(--display);font-weight:400;font-size:clamp(36px,5vw,56px);line-height:1;margin:6px 0 12px}
+.clip p{color:var(--muted);margin:0 0 20px}
+@media (max-width:720px){.clip{grid-template-columns:1fr;padding:24px}.clip video{max-width:360px;margin:0 auto}}
 .origin h3{font-family:var(--display);font-weight:400;font-size:clamp(40px,6vw,64px);line-height:1;margin:6px 0 12px}
 .origin p{margin:0;color:var(--muted)}
 .tracks{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid var(--line);counter-reset:t}
@@ -215,6 +220,18 @@ footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
         <div class="ctas" style="justify-content:flex-start">
           <a class="btn solid" href="https://vk.ru/wall-233634052_2" target="_blank" rel="noopener">▶ Смотреть видео</a>
           <a class="btn ghost" href="https://music.yandex.ru/album/36153295/track/138030922" target="_blank" rel="noopener">Слушать</a>
+        </div>
+      </div>
+
+      <div class="clip">
+        <video src="media/angely-s-toboy.mp4" poster="media/angely-s-toboy.jpg" controls playsinline preload="none"></video>
+        <div>
+          <div class="eyebrow">Видео</div>
+          <h3>Ангелы с тобой</h3>
+          <p>Всё, что есть сегодня — это лишь на время.<br>Знай, что только лучшее тебя ждёт за дверью.</p>
+          <div class="ctas" style="justify-content:flex-start">
+            <a class="btn ghost" href="https://music.yandex.ru/album/40341836/track/147488914" target="_blank" rel="noopener">Слушать полностью</a>
+          </div>
         </div>
       </div>
 
