@@ -178,6 +178,8 @@ footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
 .player{margin:28px 0;padding:22px;border:1px solid var(--line);border-radius:14px;background:radial-gradient(120% 140% at 100% 0%,rgba(212,174,132,.14),transparent 60%),var(--bg-2)}
 .player b{display:block;font-family:var(--display);font-weight:400;font-size:28px;margin:4px 0 14px}
 .player audio{display:block;width:100%}
+.yt{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000;margin:6px 0 14px}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .player video{display:block;width:100%;max-width:420px;margin:0 auto;aspect-ratio:9/16;height:auto;border-radius:12px;background:#000}
 details.lyrics{margin:18px 0 0;border-top:1px solid var(--line);padding-top:14px}
 details.lyrics summary{cursor:pointer;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--light)}
@@ -341,6 +343,13 @@ details.lyrics summary{cursor:pointer;font-family:var(--mono);font-size:13px;let
 каково это — быть мамой.</div></details>
     </div>
 
+    <div class="player">
+      <div class="eyebrow">Смотреть на YouTube</div>
+      <b>Обе песни</b>
+      <div class="yt"><iframe src="https://www.youtube.com/embed/videoseries?list=UUYFyj6c2LQoY96loMRNT9sg" title="Екатерина Астра — песни на YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <a class="btn ghost" href="https://www.youtube.com/@Astra_life2026" target="_blank" rel="noopener">Подписаться на канал</a>
+    </div>
+
     <div class="gallery"><img src="media/roditelyam/pianino.jpg" alt="Екатерина в детстве" loading="lazy" class="wide"><img src="media/roditelyam/mama-malyshka.jpg" alt="Екатерина в детстве" loading="lazy"><img src="media/roditelyam/medved.jpg" alt="Екатерина в детстве" loading="lazy"><img src="media/roditelyam/oboi.jpg" alt="Екатерина в детстве" loading="lazy"><img src="media/roditelyam/zhiletka.jpg" alt="Екатерина в детстве" loading="lazy" class="wide"><img src="media/roditelyam/kukla.jpg" alt="Екатерина в детстве" loading="lazy"><img src="media/roditelyam/bant.jpg" alt="Екатерина в детстве" loading="lazy"></div>
 
     <h2>Про безусловную любовь</h2>
@@ -354,6 +363,7 @@ details.lyrics summary{cursor:pointer;font-family:var(--mono);font-size:13px;let
     <div class="ctas back">
       <a class="btn solid" href="./#music">Все песни</a>
       <a class="btn ghost" href="https://vk.ru/clubekaterinaastra" target="_blank" rel="noopener">Сообщество VK</a>
+      <a class="btn ghost" href="https://www.youtube.com/@Astra_life2026" target="_blank" rel="noopener">YouTube</a>
     </div>
   </article>
 </main>
