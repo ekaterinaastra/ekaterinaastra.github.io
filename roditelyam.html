@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="yandex-verification" content="9beaf05894169498" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Песни «Папе» и «Маме» — подарок Екатерины Астры родителям в её день рождения. Слушать, читать слова и письмо о безусловной любви.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Папе. Маме. — Екатерина Астра</title>
+<meta property="og:title" content="Папе. Маме. Две песни моим родителям">
+<meta property="og:description" content="В свой день рождения я дарю родителям две песни. Просто потому, что они дали мне всё, что могли дать. И даже больше.">
+<link rel="canonical" href="https://ekaterinaastra.github.io/roditelyam.html">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<style>
+/* Layout: тёмная сцена; один луч света сверху, всё остальное — тихий зал. Одна колонка текста, сетки только там, где есть что сравнивать. */
+:root{
+  --bg:#17130f;          /* бархат зала */
+  --bg-2:#221c17;        /* ложа, чуть светлее */
+  --line:#3b322a;        /* шов занавеса */
+  --fg:#f6f0e7;          /* тёплый белый, как свет рампы на коже */
+  --muted:#bfb2a3;
+  --light:#d4ae84;       /* луч прожектора */
+  --aster:#e8d4b9;--star:#d4ae84;       /* астра */
+  --display:"Cormorant Garamond","Times New Roman",Georgia,serif;
+  --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --measure:62ch;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--light);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* шапка */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.mark{display:flex;align-items:center;gap:12px;font-family:var(--display);font-size:22px;font-weight:500;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
+.mono{width:44px;height:37px;overflow:visible;flex:0 0 auto}.mono-star{fill:var(--star)}
+
+nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+nav a{font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--fg)}
+@media (max-width:720px){nav a.opt{display:none}nav{gap:14px}}
+
+/* сцена */
+.stage{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+#light{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage .wrap{position:relative;padding-block:clamp(40px,7vw,96px) clamp(56px,8vw,96px);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero-text{display:grid;gap:26px;justify-items:start}
+.hero-photo{margin:0;position:relative;max-width:100%}
+.hero-photo img{display:block;width:100%;height:auto;aspect-ratio:900/1179;object-fit:cover;-webkit-mask-image:radial-gradient(120% 100% at 60% 35%,#000 55%,transparent 100%);mask-image:radial-gradient(120% 100% at 60% 35%,#000 55%,transparent 100%)}
+@media (max-width:760px){
+  .stage .wrap{grid-template-columns:1fr;text-align:center}
+  .hero-photo{order:-1;width:min(78vw,380px);justify-self:center}
+  .hero-text{justify-items:center}
+}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--light)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(54px,11vw,138px);line-height:.92;margin:0;letter-spacing:.01em;text-wrap:balance}
+h1 span{display:block;font-style:italic;color:var(--light);text-shadow:0 0 40px rgba(212,174,132,.35)}
+.lead{max-width:30ch;font-size:clamp(18px,2.2vw,22px);color:var(--fg);margin:0;text-wrap:balance}
+.motto{font-family:var(--display);font-size:20px;color:var(--aster);letter-spacing:.06em}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-start}
+@media (max-width:760px){.hero-text .ctas{justify-content:center}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:1px solid var(--light);transition:background .2s,color .2s}
+.btn.solid{background:var(--light);color:var(--bg)}
+.btn.solid:hover{background:var(--fg);border-color:var(--fg)}
+.btn.ghost{color:var(--light)}
+.btn.ghost:hover{background:rgba(212,174,132,.12)}
+
+/* секции */
+section{padding-block:clamp(64px,9vw,112px);border-bottom:1px solid var(--line)}
+.sec-head{display:grid;gap:10px;margin-bottom:40px;max-width:var(--measure)}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(38px,6vw,64px);line-height:1;margin:0;text-wrap:balance}
+.sec-head p{margin:0;color:var(--muted)}
+p{max-width:var(--measure)}
+
+/* песни */
+.listen{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.platform{display:grid;gap:14px;padding:26px;border:1px solid var(--line);border-radius:14px;background:var(--bg-2);text-decoration:none}
+.platform:hover{border-color:var(--light)}
+.platform b{font-family:var(--display);font-weight:400;font-size:28px}
+.platform small{color:var(--muted);font-size:14px}
+.platform .go{font-family:var(--mono);font-size:13px;color:var(--light)}
+.setlist{margin-top:48px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+@media (max-width:760px){.setlist{grid-template-columns:1fr}}
+.setlist ol{list-style:none;margin:0;padding:0;counter-reset:s;border-top:1px solid var(--line)}
+.setlist li{counter-increment:s;display:flex;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.setlist li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:2ch}
+.setlist li.new{color:var(--light)}
+.setlist li .tag{margin-left:auto;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--aster)}
+.setlist li.tbd{color:var(--muted);font-style:italic}
+
+.origin{margin-top:48px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 40px;align-items:end;padding:32px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 0% 0%,rgba(212,174,132,.16),transparent 60%),var(--bg-2)}
+@media (max-width:720px){.origin{grid-template-columns:1fr;padding:24px}}
+.clip{margin-top:24px;display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:24px 40px;align-items:center;padding:32px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(212,174,132,.14),transparent 60%),var(--bg-2)}
+.clip video{display:block;width:100%;aspect-ratio:9/16;height:auto;border-radius:12px;background:#000;object-fit:cover}
+.clip h3{font-family:var(--display);font-weight:400;font-size:clamp(36px,5vw,56px);line-height:1;margin:6px 0 12px}
+.clip p{color:var(--muted);margin:0 0 20px}
+@media (max-width:720px){.clip{grid-template-columns:1fr;padding:24px}.clip video{max-width:360px;margin:0 auto}}
+.clip.soon{grid-template-columns:1fr}
+.origin h3{font-family:var(--display);font-weight:400;font-size:clamp(40px,6vw,64px);line-height:1;margin:6px 0 12px}
+.origin p{margin:0;color:var(--muted)}
+.tracks{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid var(--line);counter-reset:t}
+.tracks li{counter-increment:t;border-bottom:1px solid var(--line)}
+.tracks a{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;padding:18px 0;text-decoration:none}
+.tracks .l{flex-basis:100%;padding-left:calc(2ch + 16px);font-style:italic;color:var(--muted);font-size:15.5px;line-height:1.5}
+.tracks a::before{content:counter(t,decimal-leading-zero);font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:2ch}
+.tracks .t{font-family:var(--display);font-size:clamp(24px,3.2vw,32px);line-height:1.1}
+.tracks .y{margin-left:auto;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.tracks .p{font-family:var(--mono);font-size:13px;color:var(--light);white-space:nowrap}
+.tracks a:hover .t{color:var(--light)}
+/* концерт */
+.concert{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:center}
+@media (max-width:820px){.concert{grid-template-columns:1fr}}
+.ticket{border:1px solid var(--light);border-radius:18px;padding:30px;display:grid;gap:20px;background:linear-gradient(160deg,rgba(212,174,132,.10),transparent 60%),var(--bg-2)}
+.ticket .date{font-family:var(--display);font-size:clamp(48px,7vw,76px);line-height:.95;color:var(--light)}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:0}
+.facts dt{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.facts dd{margin:0}
+.count{display:flex;align-items:baseline;gap:10px;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.count strong{font-size:42px;font-weight:500;color:var(--fg)}
+.count span{color:var(--muted);font-size:14px}
+
+/* организаторам / партнёрам */
+.formats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:0;border-top:1px solid var(--line)}
+.formats > div{padding:24px 24px 26px 0;border-bottom:1px solid var(--line);display:grid;gap:8px;align-content:start}
+.formats h3{font-family:var(--display);font-weight:400;font-size:26px;margin:0}
+.formats p{margin:0;color:var(--muted);font-size:15.5px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px}
+@media (max-width:820px){.two{grid-template-columns:1fr;gap:72px}}
+.note{margin-top:28px;font-size:15px;color:var(--muted)}
+.note a{color:var(--light)}
+
+/* поддержка */
+.support{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center;padding:clamp(28px,4vw,48px);border:1px solid var(--aster);border-radius:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(212,174,132,.18),transparent 60%),var(--bg-2)}
+@media (max-width:820px){.support{grid-template-columns:1fr}}
+.support ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.support li{display:flex;gap:12px;align-items:baseline}
+.support li::before{content:"✦";color:var(--aster);font-size:13px}
+.btn[aria-disabled="true"]{opacity:.55;pointer-events:none}
+/* обо мне */
+.about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+@media (max-width:820px){.about{grid-template-columns:1fr}}
+.about-side{display:grid;gap:28px}
+.about-side img{display:block;width:100%;max-width:420px;height:auto;aspect-ratio:760/1111;border-radius:6px}
+.quote{font-family:var(--display);font-size:clamp(30px,4.4vw,46px);line-height:1.1;margin:0;color:var(--fg);text-wrap:balance}
+.quote em{color:var(--aster);font-style:normal}
+.about-text{display:grid;gap:16px}
+.about-text p{margin:0}
+
+/* подвал */
+footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
+.contact{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.handle{font-family:var(--mono);font-size:15px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;user-select:all}
+.copy{font:inherit;font-size:14px;background:none;border:1px solid var(--line);color:var(--fg);border-radius:10px;padding:10px 14px;cursor:pointer}
+.copy:hover{border-color:var(--light)}
+.small{font-size:13px;color:var(--muted)}
+</style>
+<style>
+.letter{max-width:720px;margin:0 auto;padding-block:clamp(48px,8vw,96px)}
+.letter h1{font-size:clamp(56px,12vw,120px);margin:14px 0 18px}
+.letter .sub{font-family:var(--display);font-size:clamp(22px,3vw,28px);line-height:1.3;color:var(--aster);margin:0 0 40px;text-wrap:balance}
+.letter p{margin:0 0 18px;font-size:18px;line-height:1.7}
+.letter h2{font-size:clamp(40px,7vw,64px);margin:64px 0 8px}
+.letter .epi{font-family:var(--display);font-style:italic;font-size:clamp(24px,3.4vw,32px);line-height:1.25;color:var(--light);margin:0 0 28px;padding-left:20px;border-left:1px solid var(--light)}
+.photo{margin:40px 0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.photo img{display:block;width:100%;height:auto}
+.photo figcaption{font-size:14px;color:var(--muted);padding:12px 16px;background:var(--bg-2)}
+.player{margin:28px 0;padding:22px;border:1px solid var(--line);border-radius:14px;background:radial-gradient(120% 140% at 100% 0%,rgba(212,174,132,.14),transparent 60%),var(--bg-2)}
+.player b{display:block;font-family:var(--display);font-weight:400;font-size:28px;margin:4px 0 14px}
+.player audio{display:block;width:100%}
+details.lyrics{margin:18px 0 0;border-top:1px solid var(--line);padding-top:14px}
+details.lyrics summary{cursor:pointer;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--light)}
+.lyrics .v{font-family:var(--display);font-size:21px;line-height:1.45;white-space:pre-line;margin:18px 0 0;color:var(--fg)}
+.lyrics .v i{display:block;font-family:var(--mono);font-style:normal;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:22px 0 6px}
+.letter .promise{font-family:var(--display);font-size:clamp(30px,5vw,44px);line-height:1.15;color:var(--fg);margin:48px 0 24px;text-wrap:balance}
+.promise em{color:var(--light)}
+.sign{font-family:"Pinyon Script",cursive;font-size:44px;color:var(--light);margin:8px 0 40px}
+.back{margin-top:48px}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="./" aria-label="Екатерина Астра, на главную"><svg class="mono" viewBox="-70 0 350 290" aria-hidden="true"><g fill="currentColor"><polygon points="144,18 157,18 246,272 216,272"/><polygon points="144,18 152,18 77,272 69,272"/><rect x="48" y="268" width="48" height="6"/><rect x="198" y="268" width="68" height="6"/><rect x="97" y="187" width="102" height="5"/></g><path class="mono-star" d="M147 160 Q151 186 177 190 Q151 194 147 220 Q143 194 117 190 Q143 186 147 160 Z"/><text x="150" y="262" text-anchor="end" font-family="Pinyon Script, cursive" font-size="250" fill="currentColor">E</text></svg><span>Екатерина Астра</span></a>
+    <nav aria-label="Разделы">
+      <a href="./#music">Песни</a>
+      <a href="./#concert">Концерт</a>
+      <a href="./#partners" class="opt">Партнёрам</a>
+      <a href="./#about">Обо мне</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <article class="wrap letter">
+    <div class="eyebrow">12 ноября · мой день рождения</div>
+    <h1>Папе.<span>Маме.</span></h1>
+    <p class="sub">Две песни, которые я дарю своим родителям.</p>
+    
+
+    <p>Сегодня мой день рождения. В этот день принято получать подарки, а я хочу подарить сама.</p>
+    <p>Две новые песни — «Папе» и «Маме». Без повода и без «за что». Просто потому, что вы дали мне всё, что могли дать. И даже больше.</p>
+
+    <h2>Папе</h2>
+    <p class="epi">Знаю всегда: в моём ДНК<br>мой отец. Остальное не важно.</p>
+    <p>Мне можно упасть — и не страшно. Это чувство со мной с детства, и оно от тебя, папа.</p>
+    <p>Ты никогда не просил внимания. Не требовал послушания, не ждал почитания. Ты просто есть — и всегда рядом тогда, когда надо.</p>
+    <p>Жизнь бывает нелёгкой. Бывает больно и страшно. Но я точно знаю, на чём стою. На тебе.</p>
+    
+    <div class="player">
+      <div class="eyebrow">Премьера · новая песня</div>
+      <b>Папе</b>
+      <audio src="media/pape.mp3" controls preload="none"></audio>
+      <details class="lyrics"><summary>Слова песни</summary><div class="v"><i>Припев</i>Ты мой отец, ты мой Бог, ты мой дом,
+защита и пристань в ненастье.
+Я обещаю тебе, мой родной,
+я буду всегда твоим счастьем.
+<i>Куплет 1</i>Мне можно упасть, и споткнуться не страшно,
+ничего не боюсь, и душа нараспашку.
+Мне Бог подарил навсегда оберег —
+и это мой самый родной человек.
+<i>Припев</i>Ты мой отец, ты мой Бог, ты мой дом,
+защита и пристань в ненастье.
+Я обещаю тебе, мой родной,
+я буду всегда твоим счастьем.
+<i>Куплет 2</i>Он просто есть и не просит внимания,
+ни послушания, ни почитания.
+Он всегда рядом, тогда, когда надо.
+Он словно Бог. Это мой ПАПА.
+<i>Припев</i>Ты мой отец, ты мой Бог, ты мой дом,
+защита и пристань в ненастье.
+Я обещаю тебе, мой родной,
+я буду всегда твоим счастьем.
+<i>Бридж</i>Он тот, кто меня никогда не предаст,
+он душу свою, если надо, отдаст.
+Его похвала — это награда.
+Он лучший на свете мужчина. Правда!
+<i>Финал</i>Жизнь иногда совсем не легка,
+больно бывает и страшно,
+но знаю всегда: в моём ДНК
+мой отец. Остальное не важно.
+<i>Припев</i>Ты мой отец, ты мой Бог, ты мой дом,
+защита и пристань в любое ненастье.
+Я обещаю тебе, мой родной,
+я навсегда буду твоим счастьем.</div></details>
+    </div>
+
+    <h2>Маме</h2>
+    <p class="epi">Мама, я тоже теперь мама.<br>Это так странно,<br>но я тебя понимаю теперь.</p>
+    <p>Эту песню я не смогла бы написать раньше. Мне нужно было самой стать мамой, чтобы понять тебя по-настоящему.</p>
+    <p>Не спать по ночам. Отдавать всё, что есть. Прощать. Долго ждать. Теперь у меня четыре дочери, и я каждый день узнаю в себе тебя.</p>
+    <p>Было немало дней, когда я тебя обижала. Теперь мне понятно, мама. И каково это — уставать так, как уставала ты, — тоже понятно.</p>
+    <p>Мои зелёные глаза — от тебя. Черты лица, сила внутри, нежность — от тебя. Я похожа на тебя, но я не такая, как ты. Потому что ты — святая.</p>
+    
+    <div class="player">
+      <div class="eyebrow">Премьера · новая песня</div>
+      <b>Маме</b>
+      <audio src="media/mame.mp3" controls preload="none"></audio>
+      <details class="lyrics"><summary>Слова песни</summary><div class="v"><i>Припев</i>Мама, я тоже теперь мама.
+Это так странно,
+но я тебя понимаю теперь, мама.
+
+Было немало —
+я тебя обижала,
+но теперь всё стало
+мне понятно, мама.
+<i>Куплет 1</i>Только мама
+может так любить,
+по ночам не спать,
+всё, что есть, отдать.
+
+Только мама
+может всё простить,
+может долго ждать
+и тебе сказать:
+
+«Дочь, ты как я точь-в-точь,
+чем тебе помочь?»
+Все невзгоды прочь,
+когда ты рядом, мама.
+<i>Припев</i>Мама, я тоже теперь мама.
+Это так странно,
+но я тебя понимаю теперь, мама.
+
+Было немало —
+я тебя обижала,
+но теперь всё стало
+мне понятно, мама.
+<i>Куплет 2</i>Знаешь, мама,
+ты мне так нужна.
+Обними меня, ма,
+мне это надо.
+
+Знаешь, мама,
+ты моя звезда.
+Ты свети всегда,
+чтобы знать могла я,
+что ты всегда рядом.
+<i>Припев</i>Мама, я тоже теперь мама.
+Это так странно,
+но я тебя понимаю теперь, мама.
+
+Было немало —
+я тебя обижала,
+но теперь всё стало
+мне понятно, мама.
+<i>Бридж</i>Мои глаза зелёные от тебя,
+и черты лица твои.
+Моя сила внутри,
+моя нежность души —
+это всё от тебя, это ты.
+
+Ты богиня любви,
+красоты, доброты,
+твоя нежность и сила без края.
+Твои во мне есть черты,
+но я не такая, как ты,
+потому что ты — святая.
+<i>Финальный припев</i>Мама, я тоже теперь мама.
+Это так странно,
+но я тебя понимаю теперь, мама.
+
+Было немало
+дней, когда я уставала,
+и теперь мне понятно,
+каково это — быть мамой.</div></details>
+    </div>
+
+    <h2>Про безусловную любовь</h2>
+    <p>Почти любую любовь в жизни приходится заслуживать: быть хорошей, удобной, успешной, правильной. Родительская любовь — исключение. Ей не важны оценки, ошибки и достижения. Она просто есть.</p>
+    <p>Пока ты ребёнок, она кажется чем-то само собой разумеющимся. Когда появляются свои дети, становится видно, сколько за ней стоит: бессонных ночей, терпения, тишины, в которой тебя ждут.</p>
+    <p>Папа, мама, спасибо вам. За жизнь. За дом, который до сих пор мой дом. За то, что я могу падать и не бояться.</p>
+    <p class="promise">Я обещаю: я буду всегда <em>вашим счастьем</em>.</p>
+    <div class="sign">Ваша Катя</div>
+
+    <p>Если эти песни отозвались в вас, включите их своим родителям. Или просто позвоните им сегодня.</p>
+    <div class="ctas back">
+      <a class="btn solid" href="./#music">Все песни</a>
+      <a class="btn ghost" href="https://vk.ru/clubekaterinaastra" target="_blank" rel="noopener">Сообщество VK</a>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="small">© Екатерина Астра. Музыка и тексты песен принадлежат автору.</div>
+  </div>
+</footer>
+</body>
+</html>
