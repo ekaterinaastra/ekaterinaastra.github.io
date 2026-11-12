@@ -10,18 +10,18 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
 <style>
 /* Layout: тёмная сцена; один луч света сверху, всё остальное — тихий зал. Одна колонка текста, сетки только там, где есть что сравнивать. */
 :root{
-  --bg:#110c12;          /* бархат зала */
-  --bg-2:#1a131c;        /* ложа, чуть светлее */
-  --line:#3a2c3c;        /* шов занавеса */
-  --fg:#f1e7dc;          /* тёплый белый, как свет рампы на коже */
-  --muted:#b3a3a8;
-  --light:#f4c983;       /* луч прожектора */
-  --aster:#d784c9;       /* астра */
-  --display:"Forum","Times New Roman",Georgia,serif;
+  --bg:#17130f;          /* бархат зала */
+  --bg-2:#221c17;        /* ложа, чуть светлее */
+  --line:#3b322a;        /* шов занавеса */
+  --fg:#f6f0e7;          /* тёплый белый, как свет рампы на коже */
+  --muted:#bfb2a3;
+  --light:#d4ae84;       /* луч прожектора */
+  --aster:#e8d4b9;--star:#d4ae84;       /* астра */
+  --display:"Cormorant Garamond","Times New Roman",Georgia,serif;
   --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
   --measure:62ch;
@@ -39,7 +39,9 @@ a{color:inherit}
 /* шапка */
 header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
-.mark{font-family:var(--display);font-size:22px;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.mark{display:flex;align-items:center;gap:12px;font-family:var(--display);font-size:22px;font-weight:500;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
+.mono{width:44px;height:37px;overflow:visible;flex:0 0 auto}.mono-star{fill:var(--star)}
+
 nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
 nav a{font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
 nav a:hover{color:var(--fg)}
@@ -59,7 +61,7 @@ nav a:hover{color:var(--fg)}
 }
 .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--light)}
 h1{font-family:var(--display);font-weight:400;font-size:clamp(54px,11vw,138px);line-height:.92;margin:0;letter-spacing:.01em;text-wrap:balance}
-h1 span{display:block;color:var(--light);text-shadow:0 0 40px rgba(244,201,131,.35)}
+h1 span{display:block;font-style:italic;color:var(--light);text-shadow:0 0 40px rgba(212,174,132,.35)}
 .lead{max-width:30ch;font-size:clamp(18px,2.2vw,22px);color:var(--fg);margin:0;text-wrap:balance}
 .motto{font-family:var(--display);font-size:20px;color:var(--aster);letter-spacing:.06em}
 .ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-start}
@@ -68,7 +70,7 @@ h1 span{display:block;color:var(--light);text-shadow:0 0 40px rgba(244,201,131,.
 .btn.solid{background:var(--light);color:var(--bg)}
 .btn.solid:hover{background:var(--fg);border-color:var(--fg)}
 .btn.ghost{color:var(--light)}
-.btn.ghost:hover{background:rgba(244,201,131,.12)}
+.btn.ghost:hover{background:rgba(212,174,132,.12)}
 
 /* секции */
 section{padding-block:clamp(64px,9vw,112px);border-bottom:1px solid var(--line)}
@@ -93,9 +95,9 @@ p{max-width:var(--measure)}
 .setlist li .tag{margin-left:auto;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--aster)}
 .setlist li.tbd{color:var(--muted);font-style:italic}
 
-.origin{margin-top:48px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 40px;align-items:end;padding:32px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 0% 0%,rgba(215,132,201,.16),transparent 60%),var(--bg-2)}
+.origin{margin-top:48px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 40px;align-items:end;padding:32px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 0% 0%,rgba(212,174,132,.16),transparent 60%),var(--bg-2)}
 @media (max-width:720px){.origin{grid-template-columns:1fr;padding:24px}}
-.clip{margin-top:24px;display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:24px 40px;align-items:center;padding:32px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(215,132,201,.14),transparent 60%),var(--bg-2)}
+.clip{margin-top:24px;display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:24px 40px;align-items:center;padding:32px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(212,174,132,.14),transparent 60%),var(--bg-2)}
 .clip video{display:block;width:100%;aspect-ratio:9/16;height:auto;border-radius:12px;background:#000;object-fit:cover}
 .clip h3{font-family:var(--display);font-weight:400;font-size:clamp(36px,5vw,56px);line-height:1;margin:6px 0 12px}
 .clip p{color:var(--muted);margin:0 0 20px}
@@ -115,7 +117,7 @@ p{max-width:var(--measure)}
 /* концерт */
 .concert{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:center}
 @media (max-width:820px){.concert{grid-template-columns:1fr}}
-.ticket{border:1px solid var(--light);border-radius:18px;padding:30px;display:grid;gap:20px;background:linear-gradient(160deg,rgba(244,201,131,.10),transparent 60%),var(--bg-2)}
+.ticket{border:1px solid var(--light);border-radius:18px;padding:30px;display:grid;gap:20px;background:linear-gradient(160deg,rgba(212,174,132,.10),transparent 60%),var(--bg-2)}
 .ticket .date{font-family:var(--display);font-size:clamp(48px,7vw,76px);line-height:.95;color:var(--light)}
 .facts{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:0}
 .facts dt{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:3px}
@@ -135,7 +137,7 @@ p{max-width:var(--measure)}
 .note a{color:var(--light)}
 
 /* поддержка */
-.support{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center;padding:clamp(28px,4vw,48px);border:1px solid var(--aster);border-radius:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(215,132,201,.18),transparent 60%),var(--bg-2)}
+.support{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center;padding:clamp(28px,4vw,48px);border:1px solid var(--aster);border-radius:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(212,174,132,.18),transparent 60%),var(--bg-2)}
 @media (max-width:820px){.support{grid-template-columns:1fr}}
 .support ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
 .support li{display:flex;gap:12px;align-items:baseline}
@@ -165,7 +167,7 @@ footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
 
 <header class="top">
   <div class="wrap">
-    <a class="mark" href="#top">Екатерина Астра</a>
+    <a class="mark" href="#top" aria-label="Екатерина Астра, на главную"><svg class="mono" viewBox="-70 0 350 290" aria-hidden="true"><g fill="currentColor"><polygon points="144,18 157,18 246,272 216,272"/><polygon points="144,18 152,18 77,272 69,272"/><rect x="48" y="268" width="48" height="6"/><rect x="198" y="268" width="68" height="6"/><rect x="97" y="187" width="102" height="5"/></g><path class="mono-star" d="M147 160 Q151 186 177 190 Q151 194 147 220 Q143 194 117 190 Q143 186 147 160 Z"/><text x="150" y="262" text-anchor="end" font-family="Pinyon Script, cursive" font-size="250" fill="currentColor">E</text></svg><span>Екатерина Астра</span></a>
     <nav aria-label="Разделы">
       <a href="#music">Песни</a>
       <a href="#concert">Концерт</a>
@@ -432,9 +434,9 @@ document.getElementById('copy').addEventListener('click',function(){
   function draw(t){
     x.clearRect(0,0,w,h);
     var cx=w/2,top=-40,spread=Math.max(w*.42,260);
-    var g=x.createLinearGradient(0,0,0,h);g.addColorStop(0,'rgba(244,201,131,.30)');g.addColorStop(.7,'rgba(244,201,131,.07)');g.addColorStop(1,'rgba(244,201,131,0)');
+    var g=x.createLinearGradient(0,0,0,h);g.addColorStop(0,'rgba(212,174,132,.30)');g.addColorStop(.7,'rgba(212,174,132,.07)');g.addColorStop(1,'rgba(212,174,132,0)');
     x.fillStyle=g;x.beginPath();x.moveTo(cx-30,top);x.lineTo(cx+30,top);x.lineTo(cx+spread,h);x.lineTo(cx-spread,h);x.closePath();x.fill();
-    var pool=x.createRadialGradient(cx,h*.98,10,cx,h*.98,spread);pool.addColorStop(0,'rgba(215,132,201,.22)');pool.addColorStop(1,'rgba(215,132,201,0)');
+    var pool=x.createRadialGradient(cx,h*.98,10,cx,h*.98,spread);pool.addColorStop(0,'rgba(212,174,132,.22)');pool.addColorStop(1,'rgba(212,174,132,0)');
     x.fillStyle=pool;x.fillRect(0,0,w,h);
     for(var i=0;i<motes.length;i++){var m=motes[i];
       if(!still){m.y-=m.s*16;if(m.y<0)m.y=1}
