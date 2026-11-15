@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="yandex-verification" content="9beaf05894169498" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Первый сольный концерт Екатерины Астры — 29 января 2027, Чебоксары. Авторские песни, шоу-балет, световое шоу, фуршет. Вечер о женщинах и для женщин.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Концерт 29 января — Екатерина Астра</title>
+<meta property="og:title" content="Концерт Екатерины Астры · 29 января 2027 · Чебоксары">
+<meta property="og:description" content="Вечер авторских песен о женщинах и для женщин. Шоу-балет, световое шоу, фуршет. Предварительная бронь открыта.">
+<meta property="og:image" content="https://ekaterinaastra.github.io/media/kak-ptica.jpg">
+<link rel="canonical" href="https://ekaterinaastra.github.io/concert.html">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<style>
+/* Layout: тёмная сцена; один луч света сверху, всё остальное — тихий зал. Одна колонка текста, сетки только там, где есть что сравнивать. */
+:root{
+  --bg:#17130f;          /* бархат зала */
+  --bg-2:#221c17;        /* ложа, чуть светлее */
+  --line:#3b322a;        /* шов занавеса */
+  --fg:#f6f0e7;          /* тёплый белый, как свет рампы на коже */
+  --muted:#bfb2a3;
+  --light:#d4ae84;       /* луч прожектора */
+  --aster:#e8d4b9;--star:#d4ae84;       /* астра */
+  --display:"Cormorant Garamond","Times New Roman",Georgia,serif;
+  --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --measure:62ch;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--light);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* шапка */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.mark{display:flex;align-items:center;gap:12px;font-family:var(--display);font-size:22px;font-weight:500;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
+.mono{width:44px;height:37px;overflow:visible;flex:0 0 auto}.mono-star{fill:var(--star)}
+
+nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+nav a{font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--fg)}
+@media (max-width:720px){nav a.opt{display:none}nav{gap:14px}}
+
+/* сцена */
+.stage{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+#light{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage .wrap{position:relative;padding-block:clamp(40px,7vw,96px) clamp(56px,8vw,96px);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero-text{display:grid;gap:26px;justify-items:start}
+.hero-photo{margin:0;position:relative;max-width:100%}
+.hero-photo img{display:block;width:100%;height:auto;aspect-ratio:900/1179;object-fit:cover;-webkit-mask-image:radial-gradient(120% 100% at 60% 35%,#000 55%,transparent 100%);mask-image:radial-gradient(120% 100% at 60% 35%,#000 55%,transparent 100%)}
+@media (max-width:760px){
+  .stage .wrap{grid-template-columns:1fr;text-align:center}
+  .hero-photo{order:-1;width:min(78vw,380px);justify-self:center}
+  .hero-text{justify-items:center}
+}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--light)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(54px,11vw,138px);line-height:.92;margin:0;letter-spacing:.01em;text-wrap:balance}
+h1 span{display:block;font-style:italic;color:var(--light);text-shadow:0 0 40px rgba(212,174,132,.35)}
+.lead{max-width:30ch;font-size:clamp(18px,2.2vw,22px);color:var(--fg);margin:0;text-wrap:balance}
+.motto{font-family:var(--display);font-size:20px;color:var(--aster);letter-spacing:.06em}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-start}
+@media (max-width:760px){.hero-text .ctas{justify-content:center}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:1px solid var(--light);transition:background .2s,color .2s}
+.btn.solid{background:var(--light);color:var(--bg)}
+.btn.solid:hover{background:var(--fg);border-color:var(--fg)}
+.btn.ghost{color:var(--light)}
+.btn.ghost:hover{background:rgba(212,174,132,.12)}
+
+/* секции */
+section{padding-block:clamp(64px,9vw,112px);border-bottom:1px solid var(--line)}
+.sec-head{display:grid;gap:10px;margin-bottom:40px;max-width:var(--measure)}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(38px,6vw,64px);line-height:1;margin:0;text-wrap:balance}
+.sec-head p{margin:0;color:var(--muted)}
+p{max-width:var(--measure)}
+
+/* песни */
+.listen{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.platform{display:grid;gap:14px;padding:26px;border:1px solid var(--line);border-radius:14px;background:var(--bg-2);text-decoration:none}
+.platform:hover{border-color:var(--light)}
+.platform b{font-family:var(--display);font-weight:400;font-size:28px}
+.platform small{color:var(--muted);font-size:14px}
+.platform .go{font-family:var(--mono);font-size:13px;color:var(--light)}
+.setlist{margin-top:48px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+@media (max-width:760px){.setlist{grid-template-columns:1fr}}
+.setlist ol{list-style:none;margin:0;padding:0;counter-reset:s;border-top:1px solid var(--line)}
+.setlist li{counter-increment:s;display:flex;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.setlist li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:2ch}
+.setlist li.new{color:var(--light)}
+.setlist li .tag{margin-left:auto;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--aster)}
+.setlist li.tbd{color:var(--muted);font-style:italic}
+
+.origin{margin-top:48px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 40px;align-items:end;padding:32px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 0% 0%,rgba(212,174,132,.16),transparent 60%),var(--bg-2)}
+@media (max-width:720px){.origin{grid-template-columns:1fr;padding:24px}}
+.clip{margin-top:24px;display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:24px 40px;align-items:center;padding:32px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(212,174,132,.14),transparent 60%),var(--bg-2)}
+.clip video{display:block;width:100%;aspect-ratio:9/16;height:auto;border-radius:12px;background:#000;object-fit:cover}
+.clip h3{font-family:var(--display);font-weight:400;font-size:clamp(36px,5vw,56px);line-height:1;margin:6px 0 12px}
+.clip p{color:var(--muted);margin:0 0 20px}
+@media (max-width:720px){.clip{grid-template-columns:1fr;padding:24px}.clip video{max-width:360px;margin:0 auto}}
+.clip.soon{grid-template-columns:1fr}
+.origin h3{font-family:var(--display);font-weight:400;font-size:clamp(40px,6vw,64px);line-height:1;margin:6px 0 12px}
+.origin p{margin:0;color:var(--muted)}
+.tracks{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid var(--line);counter-reset:t}
+.tracks li{counter-increment:t;border-bottom:1px solid var(--line)}
+.tracks a{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;padding:18px 0;text-decoration:none}
+.tracks .l{flex-basis:100%;padding-left:calc(2ch + 16px);font-style:italic;color:var(--muted);font-size:15.5px;line-height:1.5}
+.tracks a::before{content:counter(t,decimal-leading-zero);font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:2ch}
+.tracks .t{font-family:var(--display);font-size:clamp(24px,3.2vw,32px);line-height:1.1}
+.tracks .y{margin-left:auto;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.tracks .p{font-family:var(--mono);font-size:13px;color:var(--light);white-space:nowrap}
+.tracks a:hover .t{color:var(--light)}
+/* концерт */
+.concert{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:center}
+@media (max-width:820px){.concert{grid-template-columns:1fr}}
+.ticket{border:1px solid var(--light);border-radius:18px;padding:30px;display:grid;gap:20px;background:linear-gradient(160deg,rgba(212,174,132,.10),transparent 60%),var(--bg-2)}
+.ticket .date{font-family:var(--display);font-size:clamp(48px,7vw,76px);line-height:.95;color:var(--light)}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:0}
+.facts dt{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.facts dd{margin:0}
+.count{display:flex;align-items:baseline;gap:10px;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.count strong{font-size:42px;font-weight:500;color:var(--fg)}
+.count span{color:var(--muted);font-size:14px}
+
+/* организаторам / партнёрам */
+.formats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:0;border-top:1px solid var(--line)}
+.formats > div{padding:24px 24px 26px 0;border-bottom:1px solid var(--line);display:grid;gap:8px;align-content:start}
+.formats h3{font-family:var(--display);font-weight:400;font-size:26px;margin:0}
+.formats p{margin:0;color:var(--muted);font-size:15.5px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px}
+@media (max-width:820px){.two{grid-template-columns:1fr;gap:72px}}
+.note{margin-top:28px;font-size:15px;color:var(--muted)}
+.note a{color:var(--light)}
+
+/* поддержка */
+.support{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center;padding:clamp(28px,4vw,48px);border:1px solid var(--aster);border-radius:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(212,174,132,.18),transparent 60%),var(--bg-2)}
+@media (max-width:820px){.support{grid-template-columns:1fr}}
+.support ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.support li{display:flex;gap:12px;align-items:baseline}
+.support li::before{content:"✦";color:var(--aster);font-size:13px}
+.btn[aria-disabled="true"]{opacity:.55;pointer-events:none}
+/* обо мне */
+.about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+@media (max-width:820px){.about{grid-template-columns:1fr}}
+.about-side{display:grid;gap:28px}
+.about-side img{display:block;width:100%;max-width:420px;height:auto;aspect-ratio:760/1111;border-radius:6px}
+.quote{font-family:var(--display);font-size:clamp(30px,4.4vw,46px);line-height:1.1;margin:0;color:var(--fg);text-wrap:balance}
+.quote em{color:var(--aster);font-style:normal}
+.about-text{display:grid;gap:16px}
+.about-text p{margin:0}
+
+/* подвал */
+footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
+.contact{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.handle{font-family:var(--mono);font-size:15px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;user-select:all}
+.copy{font:inherit;font-size:14px;background:none;border:1px solid var(--line);color:var(--fg);border-radius:10px;padding:10px 14px;cursor:pointer}
+.copy:hover{border-color:var(--light)}
+.small{font-size:13px;color:var(--muted)}
+</style>
+<style>
+.c-hero{padding-block:clamp(48px,8vw,104px);border-bottom:1px solid var(--line);background:radial-gradient(70% 90% at 50% 0%,rgba(212,174,132,.20),transparent 70%)}
+.c-hero .wrap{display:grid;gap:24px;justify-items:start}
+.c-hero h1{font-size:clamp(52px,10vw,120px)}
+.c-hero .lead{max-width:36ch}
+.c-meta{display:flex;flex-wrap:wrap;gap:10px 28px;font-family:var(--mono);font-size:14px;letter-spacing:.08em;color:var(--muted)}
+.c-meta b{color:var(--fg);font-weight:500}
+.prog{list-style:none;margin:0;padding:0;counter-reset:s;border-top:1px solid var(--line);max-width:760px}
+.prog li{counter-increment:s;display:flex;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.prog li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:13px;color:var(--muted);min-width:2ch}
+.prog .t{font-family:var(--display);font-size:clamp(24px,3.2vw,32px);line-height:1.1}
+.prog .p{margin-left:auto;font-family:var(--mono);font-size:13px;color:var(--light);text-decoration:none;white-space:nowrap}
+.prog .p:hover{color:var(--fg)}
+.prog li.new .t{color:var(--light)}
+.prog .tag{margin-left:auto;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--aster)}
+.dress{margin-top:40px;padding:28px;border:1px solid var(--aster);border-radius:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(212,174,132,.16),transparent 60%),var(--bg-2);max-width:760px}
+.dress h3{font-family:var(--display);font-weight:400;font-size:clamp(30px,4vw,40px);line-height:1.05;margin:6px 0 10px}
+.dress p{margin:0;color:var(--muted)}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="./" aria-label="Екатерина Астра, на главную"><svg class="mono" viewBox="-70 0 350 290" aria-hidden="true"><g fill="currentColor"><polygon points="144,18 157,18 246,272 216,272"/><polygon points="144,18 152,18 77,272 69,272"/><rect x="48" y="268" width="48" height="6"/><rect x="198" y="268" width="68" height="6"/><rect x="97" y="187" width="102" height="5"/></g><path class="mono-star" d="M147 160 Q151 186 177 190 Q151 194 147 220 Q143 194 117 190 Q143 186 147 160 Z"/><text x="150" y="262" text-anchor="end" font-family="Pinyon Script, cursive" font-size="250" fill="currentColor">E</text></svg><span>Екатерина Астра</span></a>
+    <nav aria-label="Разделы">
+      <a href="./#music">Песни</a>
+      <a href="concert.html">Концерт</a>
+      <a href="./#partners" class="opt">Партнёрам</a>
+      <a href="./#about">Обо мне</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <div class="c-hero">
+    <div class="wrap">
+      <div class="eyebrow">Первый сольный концерт</div>
+      <h1>О женщинах<span>и для женщин</span></h1>
+      <p class="lead">Вечер моих авторских песен. О любви, о родителях, о силе чувств и о праве жить по-своему.</p>
+      <div class="c-meta"><span><b>29 января 2027</b></span><span><b>Чебоксары</b></span><span>Камерный зал, до 100 мест</span></div>
+      <div class="ctas">
+        <a class="btn solid" href="https://vk.me/clubekaterinaastra" target="_blank" rel="noopener">Забронировать место</a>
+        <a class="btn ghost" href="#program">Программа</a>
+      </div>
+      <div class="count"><strong id="days">—</strong><span id="days-label">дней до концерта</span></div>
+    </div>
+  </div>
+
+  <section id="program">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Программа</div>
+        <h2>Что я спою</h2>
+        <p>Музыку и слова каждой песни я написала сама. Многие уже можно послушать до концерта.</p>
+      </div>
+      <ol class="prog">
+          <li><span class="t">Сердце в унисон</span><a class="p" href="https://music.yandex.ru/album/39780146/track/146289315" target="_blank" rel="noopener">Слушать →</a></li>
+          <li><span class="t">Не трогай мою глубину</span><a class="p" href="https://music.yandex.ru/album/40129617/track/147044538" target="_blank" rel="noopener">Слушать →</a></li>
+          <li><span class="t">Береги меня</span></li>
+          <li><span class="t">Нарисуй мечты</span><a class="p" href="https://music.yandex.ru/album/41841115/track/150860451" target="_blank" rel="noopener">Слушать →</a></li>
+          <li><span class="t">Папе</span><a class="p" href="roditelyam.html">Слушать →</a></li>
+          <li><span class="t">Маме</span><a class="p" href="roditelyam.html">Слушать →</a></li>
+          <li><span class="t">Покровительница мать</span><a class="p" href="./#music">Слушать →</a></li>
+          <li><span class="t">Как птица</span><a class="p" href="./#music">Слушать →</a></li>
+          <li><span class="t">Уходи не жалей</span><a class="p" href="https://music.yandex.ru/album/42064603/track/151330279" target="_blank" rel="noopener">Слушать →</a></li>
+          <li><span class="t">Ангелы с тобой</span><a class="p" href="https://music.yandex.ru/album/40341836/track/147488914" target="_blank" rel="noopener">Слушать →</a></li>
+          <li class="new"><span class="t">Любовь внутри</span><span class="tag">Премьера</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="evening">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Кроме песен</div>
+        <h2>Что будет в этот вечер</h2>
+      </div>
+      <div class="formats">
+        <div><h3>Шоу-балет</h3><p>Танцевальные номера в программе концерта.</p></div>
+        <div><h3>Световое шоу</h3><p>Сценический свет как часть программы.</p></div>
+        <div><h3>Розыгрыш призов</h3><p>Призы разыграем среди гостей вечера.</p></div>
+        <div><h3>Фуршет</h3><p>Угощения и время, чтобы пообщаться.</p></div>
+        <div><h3>Фотограф</h3><p>На вечере работает фотограф.</p></div>
+      </div>
+      <div class="dress">
+        <div class="eyebrow" style="color:var(--aster)">Дресс-код</div>
+        <h3>Вечерние и бальные платья</h3>
+        <p>Это вечер, на который хочется нарядиться.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="wrap concert">
+      <div class="sec-head" style="margin:0">
+        <div class="eyebrow">Места</div>
+        <h2>Предварительная бронь</h2>
+        <p>Напишите в сообщения сообщества VK слово «БРОНЬ» и число мест. Вы получите ссылку на билеты за 48 часов до открытия продаж и лучшие места в зале.</p>
+        <p class="small" style="margin:0">Бронь бесплатная и ни к чему не обязывает.</p>
+        <div class="ctas" style="justify-content:flex-start;margin-top:8px">
+          <a class="btn solid" href="https://vk.me/clubekaterinaastra" target="_blank" rel="noopener">Забронировать место</a>
+          <a class="btn ghost" href="./#support">Поддержать проект</a>
+        </div>
+      </div>
+      <div class="ticket" aria-label="Детали концерта">
+        <div class="eyebrow">Сохраните дату</div>
+        <div class="date">29 января<br>2027</div>
+        <dl class="facts">
+          <dt>Город</dt><dd>Чебоксары</dd>
+          <dt>Формат</dt><dd>Камерный зал, до 100 мест</dd>
+          <dt>Программа</dt><dd>11 авторских песен</dd>
+          <dt>Билеты</dt><dd>Предварительная бронь открыта</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p style="margin:0">Партнёрство и вопросы о концерте: <a href="mailto:ekaterinkaastra@yandex.com">ekaterinkaastra@yandex.com</a></p>
+    <div class="small">© Екатерина Астра. Музыка и тексты песен принадлежат автору.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var el=document.getElementById('days'),lab=document.getElementById('days-label');
+  var target=Date.UTC(2027,0,29,16,0);
+  var d=Math.ceil((target-Date.now())/864e5);
+  if(d<=0){el.textContent='';lab.textContent='Концерт состоялся. Спасибо, что были!';return}
+  el.textContent=d;
+  var n=d%100,m=d%10,w=(n>10&&n<20)?'дней':m===1?'день':(m>=2&&m<=4)?'дня':'дней';
+  lab.textContent=w+' до концерта';
+})();
+</script>
+
+</body>
+</html>
