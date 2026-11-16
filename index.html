@@ -341,7 +341,7 @@ footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
         <h2>«Вслух»</h2>
         <p class="motto" style="margin:0">Глубоко. Свободно. Честно.</p>
         <p>Песни о том, о чём женщины обычно молчат. Я не певица — я хочу поговорить с вами по душам. Авторские песни, живой голос и бокал игристого каждому гостю.</p>
-        <p><b>Продажи билетов открыты.</b> 30 января, 19:00, МАЙленький театр, ул. Калинина, 66. Билет 1500 ₽.</p>
+        <p><b>Продажи билетов открыты.</b> 30 января, 16:00, МАЙленький театр, ул. Калинина, 66. Билет 1500 ₽.</p>
         <div class="ctas" style="justify-content:flex-start;margin-top:8px">
           <a class="btn solid" href="https://maiteatr.ru/" target="_blank" rel="noopener">Купить билет · 1500 ₽</a>
           <a class="btn ghost" href="concert.html">Программа и детали вечера</a>
@@ -351,7 +351,7 @@ footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
         <div class="eyebrow">Сохраните дату</div>
         <div class="date">30 января<br>2027</div>
         <dl class="facts">
-          <dt>Начало</dt><dd>Суббота, 19:00</dd>
+          <dt>Начало</dt><dd>Суббота, 16:00</dd>
           <dt>Место</dt><dd>МАЙленький театр, ул. Калинина, 66</dd>
           <dt>Программа</dt><dd>11 авторских песен</dd>
           <dt>Билет</dt><dd>1500 ₽, бокал игристого в подарок</dd>
@@ -437,7 +437,7 @@ footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
 /* дни до концерта, по московскому времени */
 (function(){
   var el=document.getElementById('days'),lab=document.getElementById('days-label');
-  var target=Date.UTC(2027,0,30,16,0); // 19:00 МСК
+  var target=Date.UTC(2027,0,30,13,0); // 16:00 МСК
   var d=Math.ceil((target-Date.now())/864e5);
   if(d<=0){el.textContent='';lab.textContent='Концерт состоялся. Спасибо, что были!';return}
   el.textContent=d;
