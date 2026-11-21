@@ -7,6 +7,12 @@
 <meta name="description" content="Екатерина Астра — певица и автор песен. Слушать песни, первый сольный авторский концерт 29 января 2027 в Чебоксарах, поддержать проект.">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Екатерина Астра</title>
+<link rel="canonical" href="https://ekaterinaastra.ru/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ekaterinaastra.ru/">
+<meta property="og:title" content="Екатерина Астра — певица и автор песен">
+<meta property="og:description" content="Песни, которые я пишу сама. Первый сольный авторский концерт «Вслух» — 29 января 2027, Чебоксары.">
+<meta property="og:image" content="https://ekaterinaastra.ru/media/afisha-vsluh.jpg?v=7">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -358,6 +364,7 @@ footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
           <dt>Билет</dt><dd>1500 ₽, бокал игристого в подарок</dd>
         </dl>
         <div class="count"><strong id="days">—</strong><span id="days-label">дней до концерта</span></div>
+      <div class="count" id="seats-box" hidden><strong id="seats">—</strong><span id="seats-label">мест осталось из 170</span></div>
       </div>
     </div>
   </section>
@@ -368,7 +375,7 @@ footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
         <div class="sec-head">
           <div class="eyebrow">Партнёрам и спонсорам</div>
           <h2>Сделать концерт вместе</h2>
-          <p>Ищу партнёров для концерта 29 января. Ваш бренд увидят 200 зрителей в зале и подписчики в моих соцсетях.</p>
+          <p>Ищу партнёров для концерта 29 января. Ваш бренд увидят 170 зрителей в зале и подписчики в моих соцсетях.</p>
         </div>
         <div class="formats">
           <div><h3>Генеральный партнёр</h3><p>Название в афише, на сцене и во всех анонсах концерта.</p></div>
@@ -482,5 +489,17 @@ document.getElementById('copy').addEventListener('click',function(){
 })();
 </script>
 
+<script src="seats.js"></script>
+<script>
+(function(){
+  var n=window.SEATS_LEFT,box=document.getElementById('seats-box');
+  if(!box||typeof n!=='number'||n<0)return;
+  document.getElementById('seats').textContent=n;
+  if(n===0){document.getElementById('seats-label').textContent='мест не осталось — билеты проданы';}
+  else{var m=n%10,h=n%100,w=(m===1&&h!==11)?'место осталось':(m>=2&&m<=4&&(h<12||h>14))?'места осталось':'мест осталось';
+  document.getElementById('seats-label').textContent=w+' из 170';}
+  box.hidden=false;
+})();
+</script>
 </body>
 </html>

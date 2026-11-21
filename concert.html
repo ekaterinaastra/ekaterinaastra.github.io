@@ -9,8 +9,8 @@
 <title>«Вслух» — первый сольный авторский концерт Екатерины Астры, 29 января</title>
 <meta property="og:title" content="Екатерина Астра. «Вслух» · 29 января 2027 · Чебоксары">
 <meta property="og:description" content="Первый сольный авторский концерт. Глубоко. Свободно. Честно. 29 января, 19:00, Камерный театр, Чебоксары.">
-<meta property="og:image" content="https://ekaterinaastra.github.io/media/afisha-vsluh.jpg?v=7">
-<link rel="canonical" href="https://ekaterinaastra.github.io/concert.html">
+<meta property="og:image" content="https://ekaterinaastra.ru/media/afisha-vsluh.jpg?v=7">
+<link rel="canonical" href="https://ekaterinaastra.ru/concert.html">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -217,6 +217,7 @@ footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
         <a class="btn ghost" href="#program">Программа</a>
       </div>
       <div class="count"><strong id="days">—</strong><span id="days-label">дней до концерта</span></div>
+      <div class="count" id="seats-box" hidden><strong id="seats">—</strong><span id="seats-label">мест осталось из 170</span></div>
       </div>
       <figure class="c-poster">
         <a href="media/afisha-vsluh-hd.jpg?v=7" target="_blank" rel="noopener"><img src="media/afisha-vsluh.jpg?v=7" width="1080" height="1350" alt="Афиша: Екатерина Астра, автор и исполнитель. «Вслух» — первый сольный авторский концерт. Глубоко. Свободно. Честно. 29 января, 19:00, Камерный театр, Чебоксары. Билет 1500 ₽"></a>
@@ -313,5 +314,17 @@ footer .wrap{padding-block:56px 64px;display:grid;gap:24px}
 })();
 </script>
 
+<script src="seats.js"></script>
+<script>
+(function(){
+  var n=window.SEATS_LEFT,box=document.getElementById('seats-box');
+  if(!box||typeof n!=='number'||n<0)return;
+  document.getElementById('seats').textContent=n;
+  if(n===0){document.getElementById('seats-label').textContent='мест не осталось — билеты проданы';}
+  else{var m=n%10,h=n%100,w=(m===1&&h!==11)?'место осталось':(m>=2&&m<=4&&(h<12||h>14))?'места осталось':'мест осталось';
+  document.getElementById('seats-label').textContent=w+' из 170';}
+  box.hidden=false;
+})();
+</script>
 </body>
 </html>
