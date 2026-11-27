@@ -51,7 +51,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
 nav a{font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
 nav a:hover{color:var(--fg)}
-@media (max-width:720px){nav a.opt{display:none}nav{gap:14px}}
+@media (max-width:720px){header.top .wrap{flex-wrap:wrap;row-gap:6px;padding-block:10px}header.top nav{flex:1 0 100%;flex-wrap:nowrap;justify-content:flex-start;gap:22px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-block:4px}header.top nav::-webkit-scrollbar{display:none}nav a{white-space:nowrap}nav a.opt{display:none}header.top nav{gap:16px;justify-content:space-between}nav a{letter-spacing:.08em}nav a.cross{display:inline}}
 
 /* сцена */
 .stage{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
@@ -204,7 +204,7 @@ ym(114453496, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true,
       <a href="#concert">Концерт</a>
       <a href="#partners" class="opt">Партнёрам</a>
       <a href="#about">Обо мне</a>
-      <a href="/astra/" class="opt">Красота</a>
+      <a href="/astra/" class="cross" style="color:var(--light)">Красота</a>
     </nav>
   </div>
 </header>
